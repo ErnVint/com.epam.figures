@@ -1,0 +1,14 @@
+2019-28-28 05:28:09.595 [main] FATAL reader.DataReader - Error while opening file./res/dta.dat
+java.nio.file.NoSuchFileException: ./res/dta.dat
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86) ~[?:1.8.0_221]
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102) ~[?:1.8.0_221]
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107) ~[?:1.8.0_221]
+	at sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:214) ~[?:1.8.0_221]
+	at java.nio.file.Files.newByteChannel(Files.java:361) ~[?:1.8.0_221]
+	at java.nio.file.Files.newByteChannel(Files.java:407) ~[?:1.8.0_221]
+	at java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:384) ~[?:1.8.0_221]
+	at java.nio.file.Files.newInputStream(Files.java:152) ~[?:1.8.0_221]
+	at java.nio.file.Files.newBufferedReader(Files.java:2784) ~[?:1.8.0_221]
+	at java.nio.file.Files.newBufferedReader(Files.java:2816) ~[?:1.8.0_221]
+	at reader.DataReader.readData(DataReader.java:32) [com.epam.figures/:?]
+	at reader.DataReader.main(DataReader.java:21) [com.epam.figures/:?]
